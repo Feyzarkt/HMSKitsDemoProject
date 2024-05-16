@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id(libs.plugins.agconnect.get().pluginId)
-    //alias(libs.plugins.agconnect)
 }
 
 android {
@@ -35,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -49,6 +51,4 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(libs.agconnect.core)
-    implementation(libs.hms.map.kit)
-    implementation(libs.hms.location.kit)
 }
