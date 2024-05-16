@@ -19,10 +19,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val transaction = supportFragmentManager.beginTransaction()
-        val firstFragment = MapFragment()
-        transaction.replace(R.id.main, firstFragment).commit()
-
+        // Go to Map Fragment
+        supportFragmentManager.beginTransaction().replace(R.id.main, MapFragment()).commit()
     }
 
 }
