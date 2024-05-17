@@ -51,4 +51,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(libs.agconnect.core)
+    implementation(libs.hms.location.kit)
+    implementation(libs.hms.map.kit)
 }

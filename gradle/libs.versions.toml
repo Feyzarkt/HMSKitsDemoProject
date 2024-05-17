@@ -12,6 +12,8 @@ constraintlayout = "2.1.4"
 agconnect = "1.9.1.300"
 agconnect-agcp = "1.7.1.300"
 gradle = "8.0.0"
+hmsMap = "6.11.0.304"
+hmsLocation = "6.12.0.300"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -25,6 +27,8 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 agconnect-core = { group = "com.huawei.agconnect", name = "agconnect-core", version.ref = "agconnect" }
 agconnect-agcp = { group = "com.huawei.agconnect", name = "agcp", version.ref = "agconnect-agcp" }
 tools-gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "gradle" }
+hms-map-kit = { group = "com.huawei.hms", name = "maps", version.ref = "hmsMap" }
+hms-location-kit = { group = "com.huawei.hms", name = "location", version.ref = "hmsLocation" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
