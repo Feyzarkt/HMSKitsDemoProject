@@ -30,35 +30,7 @@ tools-gradle = { group = "com.android.tools.build", name = "gradle", version.ref
 hms-map-kit = { group = "com.huawei.hms", name = "maps", version.ref = "hmsMap" }
 hms-location-kit = { group = "com.huawei.hms", name = "location", version.ref = "hmsLocation" }
 
-
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 agconnect = { id = "com.huawei.agconnect", version.ref = "agconnect-agcp" }
-
-#allprojects {
-#repositories {
-#// Add the Maven address.
-#maven {url 'https://developer.huawei.com/repo/'}
-#}
-#}
-#...
-#buildscript{
-#repositories {
-#// Add the Maven address.
-#maven { url 'https://developer.huawei.com/repo/' }
-#}
-#dependencies {
-#// Add dependencies.
-#classpath 'com.huawei.agconnect:agcp:1.5.2.300'
-#}
-#}
-#b) App-level build.gradle
-#
-#dependencies {
-#// Add dependencies.
-#implementation 'com.huawei.agconnect:agconnect-core:1.5.2.300'
-#}
-#...
-#// Add the information to the bottom of the file.
-#apply plugin: 'com.huawei.agconnect'
