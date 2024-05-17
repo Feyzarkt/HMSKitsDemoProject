@@ -17,4 +17,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.huawei.hms.maps.MapView
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapview_mapviewdemo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        map:layout_constraintTop_toBottomOf="@id/text"/>
+        <!--map:cameraTargetLat="48.893478"
+        map:cameraTargetLng="2.334595"
+        map:cameraZoom="10"-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
